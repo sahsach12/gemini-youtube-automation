@@ -60,7 +60,6 @@ def get_pexels_image(query, video_type):
         print(f"❌ General error fetching Pexels image for query '{query}': {e}")
     return None
 
-
 def _throttle_tts():
     """Spaces out TTS requests so a burst doesn't trip Google's rate limiter."""
     global _last_tts_request
